@@ -7,6 +7,16 @@
         <title>Matthew Stevens Portfolio</title>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/fif3lkr.css">
+        <script src="./js/myworkindex.js"></script>
+        <script>
+            var maintext = "3D Design"
+            var mainimg = "url('./images/neon4.jpg')";
+            var img1 = "url('./images/neon4.jpg')";
+            var img2 = "url('./images/webthumb.png')";
+            var img3 = "url('./images/ireland.jpg')";
+
+            var largeworklink = "https://www.matthewstevens.me/3d-design/";
+        </script>
     </head>
     <body>
         <div>
@@ -53,21 +63,15 @@
             </div>
             <div class="work-grid">
                 <div id="largework">
-                    <div class="largeworkoverlay">
-                        <h3>3D Design</h3>
+                    <div class="largeworkoverlay" onclick="window.open(largeworklink)">
+                        <h3 id="largeworktitle">3D Design</h3>
                         <a>See More</a>
                     </div>
                 </div>
                 <div class="smallwork">
-                    <div class="firstsmall">
-
-                    </div>
-                    <div class="secondsmall">
-
-                    </div>
-                    <div class="thirdsmall">
-
-                    </div>
+                    <div class="firstsmall" onmouseover="change1hover();" onmouseout="changeout();" onclick="change1()"></div>
+                    <div class="secondsmall" onmouseover="change2hover();" onmouseout="changeout();" onclick="change2()"></div>
+                    <div class="thirdsmall" onmouseover="change3hover();" onmouseout="changeout();" onclick="change3()"></div>
                 </div>
             </div>
         </div>
@@ -80,7 +84,8 @@
                     <form>
                         <div>
                             <input type="text" name="name" placeholder="Your Name"><br><br>
-                            <input type="email" name="email" placeholder="Your Email">
+                            <input type="email" name="email" placeholder="Your Email"><br><br>
+                            <button type="submit" name="submit">Submit</button>
                         </div>
                         <div></div>
                         <textarea name="message" placeholder="Your Message"></textarea>

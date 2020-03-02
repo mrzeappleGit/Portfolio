@@ -181,7 +181,7 @@ body{
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 70% 10% 20%;
+    grid-template-rows: 70% 20% 10%;
     & .contactform{
         display: grid;
         align-content: center;
@@ -225,6 +225,7 @@ body{
                     color: $purplecolor;
                     border-radius: 12px;
                     border: solid $lightbluecolor 5px;
+                    height: 12%;
                     &::placeholder{
                         font-style: normal;
                         font-size: 1.5em;
@@ -244,6 +245,22 @@ body{
                         font-size: 1.5em;
                         color: $purplecolor;
                         margin-left: 3%;
+                        padding-top: 2%;
+                        padding-left: 2%;;
+                    }
+                }
+                & button{
+                    margin-left: 13%;
+                    font-style: normal;
+                    font-size: 1.5em;
+                    color: $purplecolor;
+                    border-radius: 12px;
+                    background: rgba($color: #FFFFFF, $alpha: .79);
+                    border: solid $lightbluecolor 5px;
+                    &:hover{
+                        color: $primarycolor;
+                        background: $purplecolor;
+                        cursor: pointer;
                     }
                 }
             }

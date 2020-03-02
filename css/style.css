@@ -241,8 +241,8 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
-  -ms-grid-rows: 70% 10% 20%;
-      grid-template-rows: 70% 10% 20%;
+  -ms-grid-rows: 70% 20% 10%;
+      grid-template-rows: 70% 20% 10%;
 }
 
 .contact .contactform {
@@ -305,6 +305,7 @@ body {
   color: #2B061E;
   border-radius: 12px;
   border: solid #63ADF2 5px;
+  height: 12%;
 }
 
 .contact .contactform .contactformbottom form input::-webkit-input-placeholder {
@@ -346,6 +347,8 @@ body {
   font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 
 .contact .contactform .contactformbottom form textarea:-ms-input-placeholder {
@@ -353,6 +356,8 @@ body {
   font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 
 .contact .contactform .contactformbottom form textarea::-ms-input-placeholder {
@@ -360,6 +365,8 @@ body {
   font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 
 .contact .contactform .contactformbottom form textarea::placeholder {
@@ -367,6 +374,24 @@ body {
   font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.contact .contactform .contactformbottom form button {
+  margin-left: 13%;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #2B061E;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.79);
+  border: solid #63ADF2 5px;
+}
+
+.contact .contactform .contactformbottom form button:hover {
+  color: #F1EDEE;
+  background: #2B061E;
+  cursor: pointer;
 }
 
 .contact .footer {
