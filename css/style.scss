@@ -1,0 +1,296 @@
+@import './_variables';
+
+html{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    width: 100%;
+    height: 300vh;
+    background: $primarycolor;
+    font-family: zeitung, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh;
+}
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 58% 42%;
+    padding-top: 30px;
+    & img{
+        max-width: 114px;
+        padding-left: 7%;
+        justify-self: center;
+        align-self: center;
+    }
+    & .navigation{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-self: center;
+    align-self: center;
+    & a{
+        font-style: thin;
+        font-size: 1.5em;
+        font-weight: 100;
+        text-decoration: none;
+        color: $purplecolor;
+        justify-self: center;
+        align-self: center;
+    }
+}
+}
+.top-content{
+    display: grid;
+    width: 100%;
+    & .mainimg{
+        display: grid;
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+        height: 100%;
+        & img{
+            max-width: 640px;
+            border-radius: 45px;
+            box-shadow: $blueshadow 9px 9px 9px, $darkshadow -9px -9px 9px;
+            justify-self: center;
+            margin-top: 5%;
+        }
+        
+    }
+    & h1{
+        color: $purplecolor;
+        font-style: bold;
+        font-size: 3.2em;
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    & h2{
+        margin-top: 0;
+        padding-top: 0;
+        color: $purplecolor;
+        font-style: normal;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    & .scrollbig{
+        margin-top: 10%;
+        height: 80px;
+        width: 27px;
+        border: solid 6px $purplecolor;
+        border-radius: 23px;
+        justify-self: center;
+        display: grid;
+        & .scrollsmall{
+            background: $purplecolor;
+            height: 40px;
+            width: 17px;
+            border-radius: 23px;
+            margin-top: 90%;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}
+.my-work{
+    background: $darkblue;
+    height: 100%;
+    width: 100%;
+    border-radius: 136px;
+    box-shadow: $purpleshadow 9px 9px 9px, $blueshadow -9px -9px 9px;
+    & h2{
+        padding-top: 2%;
+        color: $primarycolor;
+        font-style: normal;
+        font-size: 3.2em;
+        text-align: center;
+    }
+    & .work-grid{
+        margin-top: 6%;
+        display: grid;
+        width: 100%;
+        height: 50%;
+        grid-template-columns: 50% 50%;
+        & #largework{
+            margin-left: 10%;
+            background: url("../images/neon4.jpg");
+            background-size: cover;
+            width: 90%;
+            border-radius: 36px;
+            & .largeworkoverlay{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                border-radius: 36px;
+                background: rgba($color: #000000, $alpha: .28);
+                & h3{
+                    color: $primarycolor;
+                    justify-self: center;
+                    align-self: center;
+                    font-style: bold;
+                    font-size: 2.5em;
+                }
+                & a{
+                    color: $primarycolor;
+                    justify-self: center;
+                    align-self: end;
+                    font-style: bold;
+                    font-size: 2em;
+                }
+                &:hover{
+                    background: rgba($color: #000000, $alpha: .5);
+                    cursor: pointer;
+                }
+            }
+        }
+        & .smallwork{
+            display: grid;
+            grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
+            padding-left: 5%;
+        }
+            & .firstsmall{
+                background: url("../images/neon4.jpg");
+                background-size: cover;
+                max-width: 90%;
+                border-radius: 36px;
+                background-position: center;
+            }
+            & .secondsmall{
+                background: url("../images/webthumb.png");
+                background-size: cover;
+                max-width: 90%;
+                border-radius: 36px;
+                background-position: center;
+            }
+            & .thirdsmall{
+                margin-top: 5%;
+                background: url("../images/ireland.jpg");
+                background-size: cover;
+                background-position: center;
+                max-width: 90%;
+                border-radius: 36px;
+            }
+    }
+}
+.contact{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 70% 10% 20%;
+    & .contactform{
+        display: grid;
+        align-content: center;
+        & .contactformtop{
+            display: grid;
+            justify-self: center;
+            align-self: center;
+            width: 48%;
+            background: $lightbluecolor;
+            border-top-left-radius: 37px;
+            border-top-right-radius: 37px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            & h2{
+                color: $purplecolor;
+                font-style: bold;
+                font-size: 3.2em;
+                margin-left: 5%;
+            }
+        }
+        & .contactformbottom{
+            display: grid;
+            justify-self: center;
+            width: 48%;
+            background: $darkblue;
+            padding-top: 0;
+            margin-top: 0;
+            height: 370px;
+            border-bottom-left-radius: 37px;
+            border-bottom-right-radius: 37px;
+            & form{
+                display: grid;
+                grid-template-columns: 40% 10% 40% 10%;
+                margin-top: 5%;
+                & input{
+                    margin-left: 13%;
+                    width: 85%;
+                    background: rgba($color: #FFFFFF, $alpha: .79);
+                    font-style: normal;
+                    font-size: 1.5em;
+                    color: $purplecolor;
+                    border-radius: 12px;
+                    border: solid $lightbluecolor 5px;
+                    &::placeholder{
+                        font-style: normal;
+                        font-size: 1.5em;
+                        color: $purplecolor;
+                    }
+                }
+                & textarea{
+                    background: rgba($color: #FFFFFF, $alpha: .79);
+                    font-style: normal;
+                    font-size: 1.5em;
+                    color: $purplecolor;
+                    border-radius: 12px;
+                    border: solid $lightbluecolor 5px;
+                    margin-bottom: 20%;
+                    &::placeholder{
+                        font-style: normal;
+                        font-size: 1.5em;
+                        color: $purplecolor;
+                        margin-left: 3%;
+                    }
+                }
+            }
+        }
+    }
+    & .footer{
+        display: grid;
+        grid-template-columns: 58% 42%;
+        background: $darkblue;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        box-shadow: $blueshadow -9px -9px 9px;
+        & .logofooter{
+            padding-left: 10%;
+            margin-top: 3%;
+            display: grid;
+            grid-template-columns: 10% 90%;
+        }
+        & img{
+            max-width: 114px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        & p{
+            padding-top: 0;
+            margin-top: 0;
+            font-style: normal;
+            font-size: 1.5em;
+            color: $primarycolor;
+            margin-top: 1%;
+        }
+        & .navigation{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            justify-self: center;
+            margin-top: 5%;
+            & a{
+                font-style: thin;
+                font-size: 1.5em;
+                font-weight: 100;
+                text-decoration: none;
+                color: $primarycolor;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+    
+}
