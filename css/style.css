@@ -17,6 +17,10 @@ body {
   display: grid;
   -ms-grid-rows: 100vh 100vh 100vh;
       grid-template-rows: 100vh 100vh 100vh;
+  background: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header {
@@ -55,7 +59,7 @@ body {
   font-size: 1.5em;
   font-weight: 100;
   text-decoration: none;
-  color: #2B061E;
+  color: #63ADF2;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -91,9 +95,11 @@ body {
 }
 
 .top-content h1 {
-  color: #2B061E;
-  font-style: bold;
-  font-size: 3.2em;
+  color: #F1EDEE;
+  font-family: capitol, sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -102,7 +108,7 @@ body {
 .top-content h2 {
   margin-top: 0;
   padding-top: 0;
-  color: #2B061E;
+  color: #63ADF2;
   font-style: normal;
   font-size: 1.5em;
   text-align: center;
@@ -134,20 +140,24 @@ body {
 }
 
 .my-work {
-  background: #0D1321;
   height: 100%;
   width: 100%;
   border-radius: 136px;
-  -webkit-box-shadow: rgba(45, 6, 31, 0.55) 9px 9px 9px, rgba(17, 47, 75, 0.59) -9px -9px 9px;
-          box-shadow: rgba(45, 6, 31, 0.55) 9px 9px 9px, rgba(17, 47, 75, 0.59) -9px -9px 9px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 10% 45%;
+      grid-template-columns: 45% 10% 45%;
 }
 
 .my-work h2 {
-  padding-top: 2%;
-  color: #F1EDEE;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-top: 15%;
+  color: #2B061E;
   font-style: normal;
   font-size: 3.2em;
   text-align: center;
+  margin-top: 6%;
 }
 
 .my-work .work-grid {
@@ -155,17 +165,22 @@ body {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 50%;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  height: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  background: #0D1321;
 }
 
 .my-work .work-grid #largework {
-  margin-left: 10%;
+  margin-left: 5%;
   background: url("../images/neon4.jpg");
   background-size: cover;
   width: 90%;
+  height: 50%;
   border-radius: 36px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .my-work .work-grid #largework .largeworkoverlay {
@@ -209,14 +224,19 @@ body {
   display: grid;
       grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
   padding-left: 5%;
+  margin-top: 17%;
 }
 
 .my-work .work-grid .firstsmall {
   background: url("../images/neon4.jpg");
   background-size: cover;
   max-width: 90%;
+  height: 50%;
   border-radius: 36px;
   background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .my-work .work-grid .secondsmall {
@@ -224,16 +244,21 @@ body {
   background-size: cover;
   max-width: 90%;
   border-radius: 36px;
+  height: 50%;
   background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .my-work .work-grid .thirdsmall {
-  margin-top: 5%;
   background: url("../images/ireland.jpg");
   background-size: cover;
   background-position: center;
   max-width: 90%;
+  height: 50%;
   border-radius: 36px;
+  padding-top: 0;
 }
 
 .contact {

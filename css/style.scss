@@ -15,6 +15,10 @@ body{
     width: 100%;
     display: grid;
     grid-template-rows: 100vh 100vh 100vh;
+    background: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .header{
     width: 100%;
@@ -38,7 +42,7 @@ body{
         font-size: 1.5em;
         font-weight: 100;
         text-decoration: none;
-        color: $purplecolor;
+        color: $lightbluecolor;
         justify-self: center;
         align-self: center;
     }
@@ -63,9 +67,11 @@ body{
         
     }
     & h1{
-        color: $purplecolor;
-        font-style: bold;
-        font-size: 3.2em;
+        color: $primarycolor;
+        font-family: capitol, sans-serif !important;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 5em;
         text-align: center;
         padding-bottom: 0;
         margin-bottom: 0;
@@ -73,7 +79,7 @@ body{
     & h2{
         margin-top: 0;
         padding-top: 0;
-        color: $purplecolor;
+        color: $lightbluecolor;
         font-style: normal;
         font-size: 1.5em;
         text-align: center;
@@ -98,30 +104,35 @@ body{
     }
 }
 .my-work{
-    background: $darkblue;
     height: 100%;
     width: 100%;
     border-radius: 136px;
-    box-shadow: $purpleshadow 9px 9px 9px, $blueshadow -9px -9px 9px;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
     & h2{
-        padding-top: 2%;
-        color: $primarycolor;
+        justify-self: center;
+        padding-top: 15%;
+        color: $purplecolor;
         font-style: normal;
         font-size: 3.2em;
         text-align: center;
+        margin-top: 6%;
     }
     & .work-grid{
         margin-top: 6%;
         display: grid;
         width: 100%;
-        height: 50%;
-        grid-template-columns: 50% 50%;
+        height: 100%;
+        grid-template-columns: 100%;
+        background: $darkblue;
         & #largework{
-            margin-left: 10%;
+            margin-left: 5%;
             background: url("../images/neon4.jpg");
             background-size: cover;
             width: 90%;
+            height: 50%;
             border-radius: 36px;
+            align-self: center;
             & .largeworkoverlay{
                 display: grid;
                 width: 100%;
@@ -152,28 +163,34 @@ body{
             display: grid;
             grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
             padding-left: 5%;
+            margin-top: 17%;
         }
             & .firstsmall{
                 background: url("../images/neon4.jpg");
                 background-size: cover;
                 max-width: 90%;
+                height: 50%;
                 border-radius: 36px;
                 background-position: center;
+                align-self: center;
             }
             & .secondsmall{
                 background: url("../images/webthumb.png");
                 background-size: cover;
                 max-width: 90%;
                 border-radius: 36px;
+                height: 50%;
                 background-position: center;
+                align-self: center;
             }
             & .thirdsmall{
-                margin-top: 5%;
                 background: url("../images/ireland.jpg");
                 background-size: cover;
                 background-position: center;
                 max-width: 90%;
+                height: 50%;
                 border-radius: 36px;
+                padding-top: 0;
             }
     }
 }
