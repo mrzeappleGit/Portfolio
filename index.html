@@ -10,13 +10,22 @@
         <script src="./js/myworkindex.js"></script>
         <script src="./js/main.js"></script>
         <script>
-            var maintext = "3D Design"
-            var mainimg = "url('./images/neon4.jpg')";
-            var img1 = "url('./images/neon4.jpg')";
-            var img2 = "url('./images/webthumb.png')";
-            var img3 = "url('./images/ireland.jpg')";
+            //3D
+            var maintext_3d = "Neon Corner"
+            var mainimg_3d = "url('./images/3d/neon4.jpg')";
+            var img_3d_1 = "url('./images/3d/neon4.jpg')";
+            var img_3d_2 = "url('./images/3d/dbq-soccer.jpg')";
+            var img_3d_3 = "url('./images/3d/merge.png')";
+            var largeworklink_3d = "https://www.matthewstevens.me/3d-design/";
+            
 
-            var largeworklink = "https://www.matthewstevens.me/3d-design/";
+            //Web
+            var maintext_web = "Neon Corner"
+            var mainimg_web = "url('./images/web/webthumb.png')";
+            var img_web_1 = "url('./images/web/webthumb.png')";
+            var img_web_2 = "url('./images/web/eaiser-games.png')";
+            var img_web_3 = "url('./images/web/portfolio-1png')";
+            var largeworklink_web = "https://www.matthewstevens.me/web/";
         </script>
     </head>
     <body>
@@ -56,22 +65,62 @@
             </div>
         </div>
         <div class="my-work">
-            <div class="work-grid">
-                <div id="largework">
-                    <div class="largeworkoverlay" onclick="window.open(largeworklink)">
-                        <h3 id="largeworktitle">3D Design</h3>
-                        <a>See More</a>
+            <h2>3D Design</h2>
+            <div class="workfullgrid">
+                <div class="work-grid">
+                    <div id="largework-3d">
+                        <div class="largeworkoverlay" onclick="window.open(largeworklink)">
+                            <h3 id="largeworktitle-3d">Neon Corner</h3>
+                            <a>See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-grid">
+                    <div class="smallwork-3d">
+                        <div class="firstsmall" onmouseover="change_3d_1_hover();" onmouseout="changeout_3d();" onclick="change_3d_1()"></div>
+                        <div class="secondsmall" onmouseover="change_3d_2_hover();" onmouseout="changeout_3d();" onclick="change_3d_2()"></div>
+                        <div class="thirdsmall" onmouseover="change_3d_3_hover();" onmouseout="changeout_3d();" onclick="change_3d_3()"></div>
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>My Work</h2>
+        </div>
+        <div class="my-work">
+            <h2>Web Design</h2>
+            <div class="workfullgrid">
+                <div class="work-grid">
+                    <div class="smallwork-web">
+                        <div class="firstsmall" onmouseover="change_web_1_hover();" onmouseout="changeout();" onclick="change_web_1()"></div>
+                        <div class="secondsmall" onmouseover="change_web_2_hover();" onmouseout="changeout();" onclick="change_web_2()"></div>
+                        <div class="thirdsmall" onmouseover="change_web_3_hover();" onmouseout="changeout();" onclick="change_web_3()"></div>
+                    </div>
+                </div>
+                <div class="work-grid">
+                    <div id="largework-web">
+                        <div class="largeworkoverlay" onclick="window.open(largeworklink)">
+                            <h3 id="largeworktitle-web">Web Design</h3>
+                            <a>See More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="work-grid">
-                <div class="smallwork">
-                    <div class="firstsmall" onmouseover="change1hover();" onmouseout="changeout();" onclick="change1()"></div>
-                    <div class="secondsmall" onmouseover="change2hover();" onmouseout="changeout();" onclick="change2()"></div>
-                    <div class="thirdsmall" onmouseover="change3hover();" onmouseout="changeout();" onclick="change3()"></div>
+        </div>
+        <div class="my-work">
+            <h2>Photography</h2>
+            <div class="workfullgrid">
+                <div class="work-grid">
+                    <div id="largework-photography">
+                        <div class="largeworkoverlay" onclick="window.open(largeworklink)">
+                            <h3 id="largeworktitle-photography">Photography</h3>
+                            <a>See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-grid">
+                    <div class="smallwork-photography">
+                        <div class="firstsmall" onmouseover="change_photo_1_hover();" onmouseout="changeout();" onclick="change_photo_1()"></div>
+                        <div class="secondsmall" onmouseover="change_photo_2_hover();" onmouseout="changeout();" onclick="change_photo_2()"></div>
+                        <div class="thirdsmall" onmouseover="change_photo_3_hover();" onmouseout="changeout();" onclick="change_photo_3()"></div>
+                    </div>
                 </div>
             </div>
         </div>

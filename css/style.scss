@@ -6,7 +6,7 @@ html{
     display: grid;
     width: 100%;
     height: 300vh;
-    background: $primarycolor;
+    background: $darkblue;
     font-family: zeitung, sans-serif;
 }
 body{
@@ -14,8 +14,8 @@ body{
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-rows: 100vh 100vh 100vh;
-    background: $backgroundcolor;
+    grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+    background: $darkblue;
 }
 .top{
     width: 100%;
@@ -69,7 +69,6 @@ body{
             justify-self: center;
             margin-top: 5%;
         }
-        
     }
     & h1{
         justify-self: center;
@@ -96,12 +95,12 @@ body{
     & .scrollbig{
         height: 80px;
         width: 27px;
-        border: solid 6px $purplecolor;
+        border: solid 6px $lightbluecolor;
         border-radius: 23px;
         justify-self: center;
         display: grid;
         & .scrollsmall{
-            background: $purplecolor;
+            background: $lightbluecolor;
             height: 40px;
             width: 17px;
             border-radius: 23px;
@@ -115,93 +114,93 @@ body{
     border-right: 0.2rem solid #777;
 }
 .my-work{
-    height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: 45% 10% 45%;
+    margin-bottom: 10%;
+    padding-left: 0;
+    margin-left: 0;
     & h2{
         justify-self: center;
-        padding-top: 15%;
         color: $primarycolor;
         font-style: normal;
         font-size: 3.2em;
         text-align: center;
         margin-top: 6%;
     }
-    & .work-grid{
-        margin-top: 6%;
+    & .workfullgrid{
         display: grid;
-        width: 100%;
         height: 100%;
-        grid-template-columns: 100%;
-        & #largework{
-            margin-left: 5%;
-            background: url("../images/neon4.jpg");
-            background-size: cover;
-            width: 90%;
-            height: 50%;
-            border-radius: 36px;
-            align-self: center;
-            & .largeworkoverlay{
-                display: grid;
-                width: 100%;
-                height: 100%;
-                border-radius: 36px;
-                background: rgba($color: #000000, $alpha: .28);
-                & h3{
-                    color: $primarycolor;
-                    justify-self: center;
-                    align-self: center;
-                    font-style: bold;
-                    font-size: 2.5em;
-                }
-                & a{
-                    color: $primarycolor;
-                    justify-self: center;
-                    align-self: end;
-                    font-style: bold;
-                    font-size: 2em;
-                }
-                &:hover{
-                    background: rgba($color: #000000, $alpha: .5);
-                    cursor: pointer;
-                }
-            }
-        }
-        & .smallwork{
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 55% 45%;
+        & .work-grid{
             display: grid;
-            grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
-            padding-left: 5%;
-            margin-top: 17%;
-        }
-            & .firstsmall{
-                background: url("../images/neon4.jpg");
+            height: 100%;
+            padding-left: 0;
+            margin-left: 0;
+            grid-template-columns: 100%;
+            & #largework-3d{
+                margin-left: 5%;
+                background: url("../images/3d/neon4.jpg");
                 background-size: cover;
-                max-width: 90%;
+                width: 90%;
                 height: 50%;
-                border-radius: 36px;
-                background-position: center;
                 align-self: center;
+                & .largeworkoverlay{
+                    display: grid;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($color: #000000, $alpha: .28);
+                    & h3{
+                        color: $primarycolor;
+                        justify-self: center;
+                        align-self: center;
+                        font-style: bold;
+                        font-size: 2.5em;
+                    }
+                    & a{
+                        color: $primarycolor;
+                        justify-self: center;
+                        align-self: end;
+                        font-style: bold;
+                        font-size: 2em;
+                    }
+                    &:hover{
+                        background: rgba($color: #000000, $alpha: .5);
+                        cursor: pointer;
+                    }
+                }
             }
-            & .secondsmall{
-                background: url("../images/webthumb.png");
-                background-size: cover;
-                max-width: 90%;
-                border-radius: 36px;
-                height: 50%;
-                background-position: center;
-                align-self: center;
+            & .smallwork-3d{
+                display: grid;
+                grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
+                padding-left: 5%;
             }
-            & .thirdsmall{
-                background: url("../images/ireland.jpg");
-                background-size: cover;
-                background-position: center;
-                max-width: 90%;
-                height: 50%;
-                border-radius: 36px;
-                padding-top: 0;
-            }
+                & .firstsmall{
+                    background: url("../images/3d/neon4.jpg");
+                    background-size: cover;
+                    max-width: 90%;
+                    height: 50%;
+                    background-position: center;
+                    align-self: center;
+                }
+                & .secondsmall{
+                    background: url("../images/3d/dbq-soccer.jpg");
+                    background-size: cover;
+                    max-width: 90%;
+                    height: 50%;
+                    background-position: center;
+                    align-self: center;
+                }
+                & .thirdsmall{
+                    background: url("../images/3d/merge.png");
+                    background-size: cover;
+                    background-position: center;
+                    max-width: 90%;
+                    height: 50%;
+                }
     }
+}
+    
 }
 .contact{
     display: grid;
