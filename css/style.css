@@ -78,6 +78,72 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 2%;
+}
+
+.top-content .top-grid {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 30% 3%;
+      grid-template-columns: 60% 30% 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-content .top-grid .titles {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.top-content .top-grid h1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #F1EDEE;
+  font-family: capitol, sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.top-content .top-grid h2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 0;
+  padding-top: 0;
+  color: #63ADF2;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.top-content .top-grid .profile {
+  height: 100%;
+  width: 100%;
+  background: url("../images/profile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.top-content .top-grid .profile div {
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 19, 33, 0.5);
 }
 
 .top-content .mainimg {
@@ -99,36 +165,6 @@ body {
   -ms-grid-column-align: center;
       justify-self: center;
   margin-top: 5%;
-}
-
-.top-content h1 {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: #F1EDEE;
-  font-family: capitol, sans-serif !important;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 5em;
-  text-align: center;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.top-content h2 {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 0;
-  padding-top: 0;
-  color: #63ADF2;
-  font-style: normal;
-  font-size: 2rem;
-  text-align: center;
 }
 
 .top-content .scrollbig {
@@ -242,6 +278,98 @@ body {
   cursor: pointer;
 }
 
+.my-work .workfullgrid .work-grid #largework-web {
+  margin-left: 5%;
+  background: url("../images/web/webthumb.png");
+  background-size: cover;
+  width: 90%;
+  height: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.my-work .workfullgrid .work-grid #largework-web .largeworkoverlay {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.my-work .workfullgrid .work-grid #largework-web .largeworkoverlay h3 {
+  color: #F1EDEE;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-style: bold;
+  font-size: 2.5em;
+}
+
+.my-work .workfullgrid .work-grid #largework-web .largeworkoverlay a {
+  color: #F1EDEE;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-style: bold;
+  font-size: 2em;
+}
+
+.my-work .workfullgrid .work-grid #largework-web .largeworkoverlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.my-work .workfullgrid .work-grid #largework-photo {
+  margin-left: 5%;
+  background: url("../images/photography/ireland.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.my-work .workfullgrid .work-grid #largework-photo .largeworkoverlay {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.my-work .workfullgrid .work-grid #largework-photo .largeworkoverlay h3 {
+  color: #F1EDEE;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-style: bold;
+  font-size: 2.5em;
+}
+
+.my-work .workfullgrid .work-grid #largework-photo .largeworkoverlay a {
+  color: #F1EDEE;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-style: bold;
+  font-size: 2em;
+}
+
+.my-work .workfullgrid .work-grid #largework-photo .largeworkoverlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
 .my-work .workfullgrid .work-grid .smallwork-3d {
   display: -ms-grid;
   display: grid;
@@ -279,6 +407,80 @@ body {
   height: 50%;
 }
 
+.my-work .workfullgrid .work-grid .smallwork-web {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
+  padding-left: 5%;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-web .firstsmall {
+  background: url("../images/web/webthumb.png");
+  background-size: cover;
+  max-width: 90%;
+  height: 50%;
+  background-position: top;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-web .secondsmall {
+  background: url("../images/web/eaisier-games.png");
+  background-size: cover;
+  max-width: 90%;
+  height: 50%;
+  background-position: top;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-web .thirdsmall {
+  background: url("../images/web/easier-tickets.png");
+  background-size: cover;
+  background-position: top;
+  max-width: 90%;
+  height: 50%;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-photography {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "firstsmall secondsmall" "thirdsmall  thirdsmall";
+  padding-left: 5%;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-photography .firstsmall {
+  background: url("../images/photography/ireland.jpg");
+  background-size: cover;
+  max-width: 90%;
+  height: 50%;
+  background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-photography .secondsmall {
+  background: url("../images/photography/portrait.jpg");
+  background-size: cover;
+  max-width: 90%;
+  height: 50%;
+  background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.my-work .workfullgrid .work-grid .smallwork-photography .thirdsmall {
+  background: url("../images/photography/windmill.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 90%;
+  height: 50%;
+}
+
 .contact {
   display: -ms-grid;
   display: grid;
@@ -302,10 +504,11 @@ body {
       justify-self: center;
   -ms-grid-row-align: center;
       align-self: center;
-  width: 48%;
+  width: 30vw;
   background: #63ADF2;
   padding-bottom: 0;
   margin-bottom: 0;
+  border-bottom: solid thick #0D1321;
 }
 
 .contact .contactform .contactformtop h2 {
@@ -316,59 +519,66 @@ body {
 }
 
 .contact .contactform .contactformbottom {
+  border-top: solid thick #0D1321;
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 48%;
-  background: #0D1321;
+  width: 30vw;
+  background: #63ADF2;
   padding-top: 0;
   margin-top: 0;
-  height: 370px;
+  height: 35em;
 }
 
 .contact .contactform .contactformbottom form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 10% 40% 10%;
-      grid-template-columns: 40% 10% 40% 10%;
-  margin-top: 5%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .contact .contactform .contactformbottom form input {
-  margin-left: 13%;
-  width: 85%;
+  width: 100%;
   background: rgba(255, 255, 255, 0.79);
   font-style: normal;
   font-size: 1.5em;
   color: #2B061E;
   border-radius: 12px;
   border: solid #63ADF2 5px;
-  height: 12%;
+  height: 2em;
 }
 
 .contact .contactform .contactformbottom form input::-webkit-input-placeholder {
   font-style: normal;
-  font-size: 1.5em;
+  line-height: 1.5em;
   color: #2B061E;
+  margin-left: 3%;
 }
 
 .contact .contactform .contactformbottom form input:-ms-input-placeholder {
   font-style: normal;
-  font-size: 1.5em;
+  line-height: 1.5em;
   color: #2B061E;
+  margin-left: 3%;
 }
 
 .contact .contactform .contactformbottom form input::-ms-input-placeholder {
   font-style: normal;
-  font-size: 1.5em;
+  line-height: 1.5em;
   color: #2B061E;
+  margin-left: 3%;
 }
 
 .contact .contactform .contactformbottom form input::placeholder {
   font-style: normal;
-  font-size: 1.5em;
+  line-height: 1.5em;
   color: #2B061E;
+  margin-left: 3%;
 }
 
 .contact .contactform .contactformbottom form textarea {
@@ -378,47 +588,39 @@ body {
   color: #2B061E;
   border-radius: 12px;
   border: solid #63ADF2 5px;
-  margin-bottom: 20%;
+  width: 100%;
+  height: 5vh;
 }
 
 .contact .contactform .contactformbottom form textarea::-webkit-input-placeholder {
   font-style: normal;
-  font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
-  padding-top: 2%;
-  padding-left: 2%;
+  line-height: 1.5em;
 }
 
 .contact .contactform .contactformbottom form textarea:-ms-input-placeholder {
   font-style: normal;
-  font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
-  padding-top: 2%;
-  padding-left: 2%;
+  line-height: 1.5em;
 }
 
 .contact .contactform .contactformbottom form textarea::-ms-input-placeholder {
   font-style: normal;
-  font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
-  padding-top: 2%;
-  padding-left: 2%;
+  line-height: 1.5em;
 }
 
 .contact .contactform .contactformbottom form textarea::placeholder {
   font-style: normal;
-  font-size: 1.5em;
   color: #2B061E;
   margin-left: 3%;
-  padding-top: 2%;
-  padding-left: 2%;
+  line-height: 1.5em;
 }
 
 .contact .contactform .contactformbottom form button {
-  margin-left: 13%;
   font-style: normal;
   font-size: 1.5em;
   color: #2B061E;

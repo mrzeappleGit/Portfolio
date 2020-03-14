@@ -20,12 +20,21 @@
             
 
             //Web
-            var maintext_web = "Neon Corner"
+            var maintext_web = "Inspiration Stables"
             var mainimg_web = "url('./images/web/webthumb.png')";
             var img_web_1 = "url('./images/web/webthumb.png')";
-            var img_web_2 = "url('./images/web/eaiser-games.png')";
-            var img_web_3 = "url('./images/web/portfolio-1png')";
+            var img_web_2 = "url('./images/web/eaisier-games.png')";
+            var img_web_3 = "url('./images/web/easier-tickets.png')";
             var largeworklink_web = "https://www.matthewstevens.me/web/";
+
+
+            //Photography
+            var maintext_photo = "Photography"
+            var mainimg_photo = "url('./images/photography/ireland.jpg')";
+            var img_photo_1 = "url('./images/photography/ireland.jpg')";
+            var img_photo_2 = "url('./images/photography/portrait.jpg')";
+            var img_photo_3 = "url('./images/photography/windmill.jpg')";
+            var largeworklink_photo = "https://www.matthewstevens.me/web/";
         </script>
     </head>
     <body>
@@ -53,9 +62,14 @@
                 </div>
             </div>
             <div class="top-content">
-                <div class="titles">
-                    <h1>Matthew Thomas Stevens</h1>
-                    <h2>I'm a<span class="txt-type" data-wait="3000" data-words='[" 3D Designer", " Web Designer", " Photographer"]'></span></h2>
+                <div class="top-grid">
+                    <div class="titles">
+                        <h1>Matthew Thomas Stevens</h1>
+                        <h2>I'm a<span class="txt-type" data-wait="3000" data-words='[" 3D Designer", " Web Designer", " Photographer"]'></span></h2>
+                    </div>
+                    <div class="profile">
+                        <div></div>
+                    </div>
                 </div>
                 <div class="scrollbig">
                     <div class="scrollsmall">
@@ -89,15 +103,15 @@
             <div class="workfullgrid">
                 <div class="work-grid">
                     <div class="smallwork-web">
-                        <div class="firstsmall" onmouseover="change_web_1_hover();" onmouseout="changeout();" onclick="change_web_1()"></div>
-                        <div class="secondsmall" onmouseover="change_web_2_hover();" onmouseout="changeout();" onclick="change_web_2()"></div>
-                        <div class="thirdsmall" onmouseover="change_web_3_hover();" onmouseout="changeout();" onclick="change_web_3()"></div>
+                        <div class="firstsmall" onmouseover="change_web_1_hover();" onmouseout="changeout_web();" onclick="change_web_1()"></div>
+                        <div class="secondsmall" onmouseover="change_web_2_hover();" onmouseout="changeout_web();" onclick="change_web_2()"></div>
+                        <div class="thirdsmall" onmouseover="change_web_3_hover();" onmouseout="changeout_web();" onclick="change_web_3()"></div>
                     </div>
                 </div>
                 <div class="work-grid">
                     <div id="largework-web">
                         <div class="largeworkoverlay" onclick="window.open(largeworklink)">
-                            <h3 id="largeworktitle-web">Web Design</h3>
+                            <h3 id="largeworktitle-web">Inspiration Stables</h3>
                             <a>See More</a>
                         </div>
                     </div>
@@ -108,7 +122,7 @@
             <h2>Photography</h2>
             <div class="workfullgrid">
                 <div class="work-grid">
-                    <div id="largework-photography">
+                    <div id="largework-photo">
                         <div class="largeworkoverlay" onclick="window.open(largeworklink)">
                             <h3 id="largeworktitle-photography">Photography</h3>
                             <a>See More</a>
@@ -117,9 +131,9 @@
                 </div>
                 <div class="work-grid">
                     <div class="smallwork-photography">
-                        <div class="firstsmall" onmouseover="change_photo_1_hover();" onmouseout="changeout();" onclick="change_photo_1()"></div>
-                        <div class="secondsmall" onmouseover="change_photo_2_hover();" onmouseout="changeout();" onclick="change_photo_2()"></div>
-                        <div class="thirdsmall" onmouseover="change_photo_3_hover();" onmouseout="changeout();" onclick="change_photo_3()"></div>
+                        <div class="firstsmall" onmouseover="change_photo_1_hover();" onmouseout="changeout_photo();" onclick="change_photo_1()"></div>
+                        <div class="secondsmall" onmouseover="change_photo_2_hover();" onmouseout="changeout_photo();" onclick="change_photo_2()"></div>
+                        <div class="thirdsmall" onmouseover="change_photo_3_hover();" onmouseout="changeout_photo();" onclick="change_photo_3()"></div>
                     </div>
                 </div>
             </div>
@@ -134,10 +148,9 @@
                         <div>
                             <input type="text" name="name" placeholder="Your Name"><br><br>
                             <input type="email" name="email" placeholder="Your Email"><br><br>
+                            <textarea name="message" placeholder="Your Message"></textarea><br><br>
                             <button type="submit" name="submit">Submit</button>
                         </div>
-                        <div></div>
-                        <textarea name="message" placeholder="Your Message"></textarea>
                     </form>
                 </div>
             </div>
