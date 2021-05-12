@@ -7,10 +7,8 @@
         <title>Matthew Stevens Portfolio</title>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/fif3lkr.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="./js/myworkindex.js"></script>
         <script>
 
@@ -46,10 +44,6 @@
             var img_photo_2 = "url('./photo/italy/images/image_8.jpg')";
             var img_photo_3 = "url('./images/photography/windmill.jpg')";
             var largeworklink_photo = "https://www.matthewstevens.me/photo/photo.html";
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script>
-        new WOW().init();
         </script>
     </head>
     <body class="main">
@@ -106,7 +100,7 @@
                         });
                           </script>
                     </div>
-                    <div class="profile wow animate__animated animate__fadeIn" data-wow-duration="5s">
+                    <div class="profile">
                         <div></div>
                     </div>
                 </div>
@@ -123,6 +117,7 @@
                 <div class="work-grid">
                     <div class="largework" id="largework-current">
                         <div class="largeworkoverlay" onclick="location.href = (largeworklink_current)">
+                            <!-- <h3 id="largeworktitle-current">Great Art Heist</h3> -->
                             <a>See More</a>
                         </div>
                     </div>
@@ -197,56 +192,21 @@
             </div>
         </div>
         <div class="contact" id="contact">
-           <div class="contact-container">
-               <div class="contact-info wow animate__animated animate__fadeInDown" data-wow-duration="5s" data-wow-delay="2s">
-                    <div>   
-                        <div class="prof-photo">
-                           <img src="images/profile.jpg">
-                       </div>
-                       <h2>Contact Info</h2>
-                       <ul class="info">
-                           <li>
-                               <span><ion-icon name="globe-outline"></ion-icon></span>
-                               <span>Dubuque, IA 52001</span>
-                           </li>
-                           <li>
-                            <span><ion-icon name="mail-outline"></ion-icon></span>
-                            <span>matthew.stevens@matthewstevens.me</span>
-                        </li>
-                        <li>
-                            <span><ion-icon name="phone-portrait-outline"></ion-icon></span>
-                            <span>(563)664-4973</span>
-                        </li>
-                       </ul>
-                    </div>
-                    <ul class="social">
-                        <li><a href="https://www.linkedin.com/in/matthew-s-1729ba93/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                        <li><a href="https://www.instagram.com/mrzeapple" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
-               </div>
-               <div class="contact-form wow animate__backInUp" data-wow-duration="2s">
-                    <h2>Send me a Message</h2>
-                    <div class="formBox">
-                        <form action="support.php" method="POST">
-                            <div class="inputBox w50">
-                                <input type="text" name="name" required>
-                                <span>Your Name</span>
-                            </div>
-                            <div class="inputBox w50">
-                                <input type="text" name="email" required>
-                                <span>Your Email</span>
-                            </div>
-                            <div class="inputBox w100">
-                                <textarea name="message" required></textarea>
-                                <span>Write your message here</span>
-                            </div>
-                            <div class="inputBox w100">
-                                <input type="submit" value="Send">
-                            </div>
+            <div class="contactform">
+                <div class="contactformtop">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contactformbottom">
+                    <form>
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name"><br><br>
+                            <input type="email" name="email" placeholder="Your Email"><br><br>
+                            <textarea name="message" placeholder="Your Message"></textarea><br><br>
+                            <button type="submit" name="submit">Submit</button>
+                        </div>
                     </form>
-                    </div>
-               </div>
-           </div>
+                </div>
+            </div>
             <div></div>
             <div class="footer">
                 <div class="logofooter">
