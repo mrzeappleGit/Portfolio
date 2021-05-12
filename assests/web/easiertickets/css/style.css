@@ -1,0 +1,213 @@
+<<<<<<< HEAD
+html{
+    padding: 0;
+    margin: 0;
+    background: oldlace;
+}
+#grid{
+    display: grid;
+}
+#header, #footer{
+    margin-left: 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background: #1C1C1C;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+.logo a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: #BFDBF7;
+}
+.logo h1{
+    padding-left: 15px;
+}
+#search{
+    justify-self: end;
+    align-self: center;
+    right: 0;
+    width: 100%;
+}
+#search form{
+    justify-self: end;
+}
+.nav{
+    align-self: center;
+    justify-self: end;
+    padding-right: 50px;
+}
+.nav li{
+    display: inline;
+    text-decoration: none;
+    text-align: right;
+}
+.nav li a{
+    text-align: right;
+    text-decoration: none;
+    padding: 20px;
+    background: #4F6D7A;
+    color: #BFDBF7;
+}
+.nav li a:hover{
+    color: #4F6D7A;
+    background: #BFDBF7;
+}
+.nav ul{
+    align-self: center;
+    margin-right: 0;
+}
+#main{
+    width: 90%;
+    margin-left: 5%;
+}
+#carosel{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 70vh;
+    background: url("../images/concert1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+}
+#carosel div{
+    align-self: end;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#carosel h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #BFDBF7;
+    background: rgba(0, 0, 0, .5)
+}
+#upcoming{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 10px;
+}
+.upcomingresults{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-bottom: 10px;
+    border-bottom: solid black thick;
+}
+.upcomingresults:nth-child(odd){
+    border-right: solid black thick;
+}
+.upcomingresults:nth-child(1), .upcomingresults:nth-child(2){
+    border-top: solid black thick;
+}
+.upcomingresultsimg{
+    width: 100%;
+    background: url("../images/concert1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.upcomingresults a{
+    text-decoration: none;
+    background: #4F6D7A;
+    border-radius: 10px;
+    padding: 10px;
+    color: #BFDBF7;
+    float: right;
+}
+.upcomingresults a:hover{
+    color: #4F6D7A;
+    background: #BFDBF7;
+}
+#footer{
+    padding-top: 0;
+=======
+html{
+    padding: 0;
+    margin: 0;
+    background: oldlace;
+}
+#grid{
+    display: grid;
+}
+#header, #footer{
+    margin-left: 12%;
+    width: 76%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    background: #1C1C1C;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+.logo a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: #BFDBF7;
+}
+.logo h1{
+    padding-left: 15px;
+}
+#search{
+    justify-self: end;
+    align-self: center;
+    right: 0;
+    width: 100%;
+}
+#search form{
+    justify-self: end;
+}
+.nav{
+    align-self: center;
+    justify-self: end;
+    padding-right: 50px;
+}
+.nav li{
+    display: inline;
+    text-decoration: none;
+    padding: 20px;
+    background: #4F6D7A;
+    text-align: right;
+}
+.nav li a{
+    text-align: right;
+    text-decoration: none;
+    color: #BFDBF7;
+}
+.nav ul{
+    align-self: center;
+    margin-right: 0;
+}
+#main{
+    width: 76%;
+    margin-left: 12%;
+}
+#carosel{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 70vh;
+    background: url("../images/concert1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+}
+#carosel div{
+    align-self: end;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#carosel h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #BFDBF7;
+    background: rgba(0, 0, 0, .5)
+}
+#footer{
+    padding-top: 0;
+>>>>>>> carousel working with redesign
+}

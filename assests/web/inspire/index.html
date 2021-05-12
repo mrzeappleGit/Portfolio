@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inspiration Stables</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="all">
+		<div class="header">
+			<a href="index.html">
+				<img src="images/logo.png" alt="logo">
+			</a>
+			<div class="navigation">
+				<input type="checkbox" name="">
+				<span></span>
+				<span></span>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About&nbsp;Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="volunteer.html">Volunteer</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+				
+			</div>
+			<!--<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="volunteer.html">Volunteer</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</nav>	-->
+		</div>
+		<div class="main">
+			<div class="top">
+				<div class="container">
+					<div class="innercontainer">
+					<!--<iframe src="https://www.youtube.com/embed/DvbmfVRnw4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>-->
+					<img name="slide" width="100%" alt="images">
+						<script>
+							var i = 0;
+							var images = [];
+							var time = 5000;
+							
+							
+							// Images
+							images[0] = 'images/slideshow/slide1.jpg';
+							images[1] = 'images/slideshow/slide2.jpg';
+							images[2] = 'images/slideshow/slide3.jpg';
+							images[3] = 'images/slideshow/slide4.jpg';
+
+							function changeImg(){
+								document.slide.src = images[i];
+								
+								if(i < images.length - 1){
+								   	i++
+								   }else{
+									   i = 0;
+								   }
+								setTimeout("changeImg()", time);
+							}
+							
+							window.onload = changeImg();
+						</script>
+				</div>
+				
+			</div>
+			<div class="content_other">
+				<div class="mission" style="padding-right: 2%;">
+					<p style="text-align: left;">Have questions <a href="mailto:info@inspirationstables.org">Contact us</a></p>
+					<p style="text-align: left;">Want to join us? <a href="volunteer.html">Join us</a></p>
+					<p style="text-align: left;">Want to donate? <a href="donate.html">Donate</a></p>
+					<p style="text-align: left;">Give us a call at (563) 265-1780</p>
+				<p>Our mission is to inspire hearts and hooves to build lasting relationships to promote wellness, healing, self-awareness and meaning.</p>
+				<!--<a href="https://www.facebook.com/Inspirationstables/"><img src="images/facebook.png" alt="facebook"></a>--></div>
+				<div class="text">
+					<p class="first">Inspiration Stables was founded by Sarah Weber Kumpf in September of 2017 as a culmination of years of experience with horses, special needs and business.  Sarah saw an incredible opportunity to bring a life-giving, inspiring service to the Dubuque community by bringing horses and humans together to share in unique learning and growth experiences.  The timing of Inspiration Stables' birth was due in great part to Sarah's horse, McCain.  McCain needed a new job after years of competitive jumping work, and creating a place where he could help others' hearts the way he had Sarah's meant the world to her. We would love you to join our team!</p>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<footer>
+				<div class="button"><a href="contact.html" style="text-decoration: none; color: #475c6c;">Contact us</a></div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home |</a></li>
+						<li><a href="about-us.html">About Us |</a></li>
+						<li><a href="services.html">Services |</a></li>
+						<li><a href="volunteer.html">Volunteer |</a></li>
+						<li><a href="donate.html">Donate</a></li>
+					</ul>
+				</nav>
+				<div class="copyright">&copy;2019 - <strong>Inspiration Stables</strong></div>
+			</footer>
+		</div>
+			</div>
+			</div>
+	</body>
+</html>

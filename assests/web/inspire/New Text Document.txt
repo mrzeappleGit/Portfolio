@@ -1,0 +1,16 @@
+.container{
+}
+.innercontainer{
+    height: 0;
+    width: 100%; /* You can set this width to whatever suits your needs */
+}
+.main .top .container .innercontainer iframe {
+    top: 0;
+    left: 0;
+	float: right;
+	width: 70%;
+}
+
+<h2 class="containertext;">Address</h2>
+					<div class="innercontainer">
+					<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJA20n6XBK44cR2nHLK3YWgi4&key=AIzaSyAdypYFhAK8kyRuSfL0BYMAWzm0JxOwamk" allowfullscreen></iframe></div>

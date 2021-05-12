@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Easier Tickets</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="javascript/loginpage.js"></script>
+    </head>
+
+    <body>
+        <div id="grid">
+            <div id="header">
+                <div class="logo">
+                    <a href="index.html"><h1>Easier Tickets</h1></a>
+                </div>
+                <div class="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                <div id="search">
+                        <form style="width: 100%;">
+                            <input type="text" placeholder="Search for an event" style="width: 60%; height: 30px;">
+                            <button name="submit" style="width: 20%; height: 31px;"><ion-icon name="search"></ion-icon></button>
+                        </form>
+                    </div> 
+            </div>
+            <div id="main"> 
+                <div id="formgrid">
+                    <div id="login-form">
+                        <form name="loginform" action="index.html#" onsubmit="return validateLogin()" method="POST">
+                            <div class="subform">
+                                <h2>Login</h2>
+                                <h3>Email:</h3>
+                                <input name="Lemail" id="Lemail" placeholder="Email" required type="email">
+                                <br>
+                                <h3>Password:</h3>
+                                <input type="password" id="Lpsw" placeholder="Password" name="psw">
+                                <br>
+                                <div class="formbutton">
+                                    <button type="submit">Login</button>
+                                    <button type="button" onclick="registerform()">New User</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="register-form">
+                        <form name="signupform" action="index.html#" onsubmit="return validatesignup()" method="POST">
+                            <div class="subform">
+                                <h2>Register</h2>
+                                <h3>First Name:</h3>
+                                <input name="fname" id="fname" placeholder="First Name" required>
+                                <br>
+                                <h3>LastName:</h3>
+                                <input name="lname" id="lname" placeholder="Last Name" required>
+                                <br>
+                                <h3>Email:</h3>
+                                <input name="email" id="email" placeholder="Email" required type="email">
+                                <br>
+                                <h3>Password:</h3>
+                                <input type="password" id="psw" placeholder="Password" name="psw">
+                                <br>
+                                <h3>Verify Password</h3>
+                                <input type="password" id="repsw" placeholder="Verify Password" name="repsw">
+                                <br>
+                                <div class="formbutton">
+                                    <button type="submit">Register</button>
+                                    <button type="button" onclick="loginformswitch()">Existing User</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                    <div>
+                        <div class="logo">
+                            <a href="index.html"><h1>Easier Tickets&copy;</h1></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
