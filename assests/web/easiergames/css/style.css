@@ -1,0 +1,215 @@
+html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d1e22;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.user{
+    float: right;
+    background: #feda6a;
+    padding: 20px 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    right: 50px;
+    box-shadow: 10px 10px #000;
+
+}
+.user a{
+    text-decoration: none;
+    color: #393F4d;
+}
+#header{
+    padding: 0;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 29% 40% 30%;
+    background: #393f4d;
+}
+#header h1{
+    align-self: center;
+    padding-left: 5%;
+    color: #d4d4d4;
+}
+/* #navfirst{
+    padding: 0 !important;
+} */
+#navbar{
+    align-self: center;
+}
+#navbar ul{
+    height: 100%;
+    text-align: center;
+}
+#navbar ul li{
+    text-align: center;
+    font-size: 1.5em;
+    display: inline;
+}
+#navbar ul li a:hover{
+    background: #feda6a;
+    color: #393f4d;
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 1%;
+    color: #d4d4dc;
+}
+#searchbar{
+    align-self: center;
+    padding-left: 5%;
+}
+#searchbar form input{
+    height: 30px;
+    width: 300px;
+    border-color: #1d1e22;
+    background: #1d1e22; 
+    color: #d4d4d4;
+}
+#searchbar form button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #1d1e22;
+    background: #1d1e22; 
+    color: #d4d4d4;
+}
+#carousel{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    padding-right: 0;
+}
+#carouselleft{
+    box-shadow:10px;
+    background-position: center;
+    background-size: cover;
+}
+#carouselright{
+    padding-left: 0;
+    margin-left: 0;
+    background-position: center;
+    box-shadow: 10px;
+    background-size: cover;
+}
+#products{
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    margin: 20px 20% 0 20%;
+    display: grid;
+    grid-gap: 2%;
+    align-content: space-around;
+    justify-content: space-between;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+.productscontainer{
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+.products{
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    margin-top: 5%;
+    transition: 1s;
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+}
+.productscontainer:hover .products{
+    box-shadow: 10px 10px #393F4d;
+}
+.product_text{
+    margin-top:200%;
+    background: #feda6a;
+    color: white;
+}
+.productscontainer:hover .products img{
+    display: none;
+}
+.productscontainer:hover .product_text{
+    display: none;
+}
+.products h2, h3{
+    text-align: center;
+    color: #1d1e1d;
+}
+.buyme{
+    padding: 20px;
+    text-decoration: none;
+    color: #feda6a;
+    background: #393F4d;
+    text-align: center;
+    transition: .5s;
+}
+.buyme:hover{
+    color: #393F4d;
+    background: #d4d4d4;
+    border-radius: 15px;
+}
+.productsdescript{
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    z-index: 1;
+    display: none;
+    background: rgba(254, 218, 106, .7);
+}
+.productsdescript p{
+    font-size: 1.2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-top: 0;
+    
+}
+.productsdescript h2{
+    font-size: 1.5em;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.productscontainer:hover .productsdescript{
+    z-index: 3;
+    display: grid;
+}
+#footer{
+    background: #393F4d;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 51% 49%;
+}
+#footerbar{
+    align-self: center;
+}
+#footerbar ul li{
+    text-align: center;
+    font-size: 1.5em;
+    display: inline;
+}
+#footerbar ul li a:hover{
+    background: #feda6a;
+    color: #393f4d;
+    
+}
+#footerbar ul li a{
+    text-decoration: none;
+    padding: 2%;
+    color: #d4d4dc;
+}

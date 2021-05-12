@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/gamepage.css">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="js/gamepageimg.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="header">
+                <div id="logo">
+                    <h1>Easier Games</h1>
+                </div>
+                <div id="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Playstation 4</a></li>
+                            <li><a href="#">Xbox one</a></li>
+                            <li><a href="#">Switch</a></li>
+                            <li><a href="#">Nintendo 3DS</a></li>
+                            <li><a href="#">PC</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="searchbar">
+                    <form>
+                        <input name="search" type="search" placeholder="Search" height="100px;">
+                        <button name="go"><ion-icon name="search"></ion-icon></button>
+                    </form>
+                </div>
+            </div>
+            <div class="gp-maincontent">
+                <div class="gp-img">
+                    <div id="gp-mainimg">
+                        
+                    </div>
+                    <div class="gp-underimg">
+                        <div id="gp-img1" onmouseover="change1hover();" onmouseout="changeout();" onclick="change1();"></div>
+                        <div id="gp-img2" onmouseover="change2hover();" onmouseout="changeout();" onclick="change2();"></div>
+                        <div id="gp-img3" onmouseover="change3hover();" onmouseout="changeout();" onclick="change3();"></div>
+                        <div id="gp-img4" onmouseover="change4hover();" onmouseout="changeout();" onclick="change4();"></div>
+                    </div>
+                </div>
+                <div class="gp-title">
+                    <h2>Cyberpunk 2077</h2>
+                    <h3>CD Project Red | Release Date: 04/16/2020</h3>
+                    <div class="gp-select">
+                        <select class="gp-platform">
+                            <option>Playstions 4</option>
+                            <option>PC</option>
+                            <option>Xbox One</option>
+                        </select>
+                        <select class="gp-edition">
+                                <option>Standard</option>
+                                <option>Collectors</option>
+                            </select>
+                    </div>
+                    <div class="gp-price">
+                        <h3>$59.99</h3>
+                    </div>
+                    <div class="gp-buy">
+                        <button>Pre-Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gp-details">
+                <h3>Details</h3>
+                <div class="gp-detailscontainer">
+                    <div class="gp-description">
+                        <p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you. </p>
+                    </div>
+                    <div class="gp-features">
+                        <p>Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City.<br><br>
+                                Enter the massive open world of Night City, a megalopolis that sets new standards in terms of visuals, complexity and depth.<br><br>
+                                Take the riskiest job of your life and go after a prototype implant that is the key to immortality.</p>
+                        <p><strong>The Game Comes With:</strong></p>
+                        <ul>
+                            <li>Case with game discs</li>
+                            <li>World Compendium detailing the game’s setting and lore</li>
+                            <li>Postcards from Night City</li>
+                            <li>Map of Night City</li>
+                            <li>Stickers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="gp-videocontainer">
+                <div class="gp-video">
+                    <h3>Videos</h3>
+                        <video src="videos/cyberpunk_2077.mp4" controls poster="images/carousel/cyberpunk_2077.jpg"></video>
+                </div>
+            </div>            
+            <div id="gp-footer">
+                <footer>
+                    <div id="gp-footerbar">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Playstation 4</a></li>
+                                <li><a href="#">Xbox one</a></li>
+                                <li><a href="#">Switch</a></li>
+                                <li><a href="#">Nintendo 3DS</a></li>
+                                <li><a href="#">PC</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+.loginregisterform{
+    padding: 0;
+    margin: 5% 25% 5% 25%;
+    width: 50%;
+    display: grid;
+    background: #feda6a;
+}
+#loginform{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-self: center;
+}
+#loginform h1 {
+    color: #feda6a;
+    font-size: 3em;
+}
+#loginform form{
+    background: #393f4d;
+    padding: 15% 10% 30% 10%;
+    width: 100%;
+    box-shadow: 10px 10px #1d2840;
+}
+#loginform input{
+    height: 3vh;
+    width: 20vw;
+    font-size: 1.5em;
+    background: rgba(254, 218, 106, .7);
+    color: #393f4d;
+    border:none;
+    transition: 1s;
+}
+#loginform input::placeholder{
+    padding-left: 2%;
+    color: #393f4d;
+}
+#loginform form a {
+    text-decoration: none;
+    background: rgba(254, 218, 106, .7);
+    color: #393f4d;
+    height: 3vh;
+    width: 10vw;
+    font-size: 1.5em;
+    padding: 2%;
+    transition: 1s;
+}
+#loginform form a:hover{
+    color: #feda6a;
+    background: rgba(29, 30, 34, .7);
+}
+#loginregister{
+    border-radius: 30px;
+}
+#loginbtn:hover{
+    color: #feda6a;
+    background: rgba(29, 30, 34, .7);
+}
+#registerbtn:hover{
+    color: #feda6a;
+    background: rgba(29, 30, 34, .7);
+}
+.panel{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    align-content: center;
+}
+.adminbutton {
+    background: #393f4d;
+    padding: 10px;
+}
+.adminbutton a{
+    text-decoration: none;
+    color: #feda6a;
+}

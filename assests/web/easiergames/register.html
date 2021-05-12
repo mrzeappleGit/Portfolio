@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/loginregister.css">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="header">
+                <div id="logo">
+                    <h1>Easier Games</h1>
+                </div>
+                <div id="navbar">
+                    <nav>
+                        <ul>
+                                <li><a href="https://www.matthewstevens.design/index.php">Home</a></li>
+                            <li><a href="console.php?page=1">Playstation 4</a></li>
+                            <li><a href="console.php?page=2">Xbox one</a></li>
+                            <li><a href="console.php?page=3">Switch</a></li>
+                            <li><a href="console.php?page=4">PC</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="searchbar">
+                    <form>
+                        <input name="search" type="search" placeholder="Search" height="100px;">
+                        <button name="go"><ion-icon name="search"></ion-icon></button>
+                    </form>
+                </div>
+            </div>
+            <div class="loginregisterform">
+                <div id="loginform">
+                    <form action="php/register.php" method="POST">
+                        <h1>Register</h1><br>
+                        <input type="text" placeholder="First Name" name="firstname"><br><br>
+                        <input type="text" placeholder="Last Name" name="lastname"><br><br>
+                        <input type="text" placeholder="Email" name="email"><br><br>
+                        <input type="text" placeholder="Username" name="username"><br><br>
+                        <input type="password" placeholder="Password" name="password"><br><br>
+                        <input type="password" placeholder="re-enter Password" name="password2"><br><br>
+                        <input type="submit" value="Register" style="cursor:pointer;" id="registerbtn"><br><br>
+                        <a href="login.html">Login</a>
+                    </form>
+                </div>
+            </div>            
+            <div id="footer">
+                <footer>
+                    <div id="footerbar">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Playstation 4</a></li>
+                                <li><a href="#">Xbox one</a></li>
+                                <li><a href="#">Switch</a></li>
+                                <li><a href="#">Nintendo 3DS</a></li>
+                                <li><a href="#">PC</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

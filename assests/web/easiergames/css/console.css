@@ -1,0 +1,12 @@
+#banner{
+    display: grid;
+    padding: 0;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    background: #feda6a;
+}
+#banner img{
+    align-self: center;
+    justify-self: center;
+    height: 15vh;
+}
